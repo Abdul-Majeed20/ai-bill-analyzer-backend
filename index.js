@@ -36,6 +36,7 @@ app.use("/api/v1/auth/me", authMiddleware, (req, res) => {
 app.use("/api/v1/bill", authMiddleware, billRouter);
 
 const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
